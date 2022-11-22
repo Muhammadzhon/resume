@@ -1,0 +1,92 @@
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  background-color: #479099;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px 20px 55px 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15%;
+}
+
+.header::after,
+.header::before {
+  position: absolute;
+  content: '';
+  height: 37%;
+  bottom: 0;
+  bottom: -3.4em;
+  background: #479099;
+  z-index: -1;
+}
+
+.header::after{
+  left: 59.9%;
+  width: 40.1%;
+  height: 37%;
+  bottom: -3.4em;
+  border-radius: 0 0 5px 2px;
+  transform: skew(0, -15deg);
+}
+
+.header::before {
+  right: 40%;
+  width: 60%;
+  border-radius: 0 0 2px 5px;
+  transform: skew(0, 10deg);
+}
+
+
+
+.position {
+  color: #cca766;
+}
+
+
+.biography {
+  max-width: 50%;
+}
+
+.contacts {
+  max-width: 40%;
+  text-align: right;
+}
+
+.contacts ul li {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.contacts ul li:last-child {
+  margin-bottom: 0;
+}
+
+.link {
+  margin-right: 6px;
+  text-align: right;
+}
+
+.photo {
+  background: #ffffff;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.photo img {
+  width: 100%;
+  position: relative;
+  top: 4%;
+  left: -2%;
+}
